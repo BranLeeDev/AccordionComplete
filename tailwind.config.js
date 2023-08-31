@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundColor: {
+        screen: "#4f1559",
+      },
     },
   },
   plugins: [],
