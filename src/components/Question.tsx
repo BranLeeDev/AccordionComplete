@@ -24,7 +24,11 @@ const Question: React.FC<Props> = ({ title, info }) => {
           onClick={handleShowAnswer}
         >
           <span className="line-btn"></span>
-          <span className="line-btn absolute rotate-90"></span>
+          <span
+            className={`line-btn absolute rotate-90 transition-transform duration-300 ease-in-out ${
+              isOpenAnswer && "rotate-0"
+            }`}
+          ></span>
         </button>
       </div>
       <AnswerQuestion isOpenAnswer={isOpenAnswer} answer={info} />
