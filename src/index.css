@@ -5,8 +5,8 @@
 @layer components {
   .line-btn {
     display: inline-block;
-    width: 100%;
+    width: 1.25rem;
     height: 0.15rem;
-    background-color: #000000;
+    background-color: #ff0000;
   }
 }

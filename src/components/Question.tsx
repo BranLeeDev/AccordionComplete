@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AnswerQuestion from "./AnswerQuestion";
+import AnswerQuestion from "./Answer";
 
 interface Props {
   title: string;
@@ -14,11 +14,13 @@ const Question: React.FC<Props> = ({ title, info }) => {
   };
 
   return (
-    <section>
-      <div>
-        <h2>{title}</h2>
+    <section className="border border-gray-950 border-opacity-10 p-2">
+      <div className="grid grid-cols-10 items-center">
+        <h2 className="col-start-1 col-end-10 text-xl text-gray-900">
+          {title}
+        </h2>
         <button
-          className="relative flex h-5 w-5 flex-col justify-center gap-3"
+          className="relative flex h-10 w-10 flex-col items-center justify-center gap-3 rounded-full bg-gray-300"
           onClick={handleShowAnswer}
         >
           <span className="line-btn"></span>

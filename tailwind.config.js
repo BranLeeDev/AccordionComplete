@@ -9,6 +9,9 @@ export default {
       backgroundColor: {
         screen: "#4f1559",
       },
+      screens: {
+        am: "350px",
+      },
     },
   },
   plugins: [],
