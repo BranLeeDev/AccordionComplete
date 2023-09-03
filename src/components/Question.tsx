@@ -25,9 +25,10 @@ const Question: React.FC<Props> = ({ title, info }) => {
         >
           <span className="line-btn"></span>
           <span
-            className={`line-btn absolute rotate-90 transition-transform duration-300 ease-in-out ${
-              isOpenAnswer && "rotate-0"
-            }`}
+            className="line-btn absolute rotate-90 transition-transform duration-300 ease-in-out"
+            style={{
+              transform: isOpenAnswer ? "rotate(360deg)" : "",
+            }}
           ></span>
         </button>
       </div>

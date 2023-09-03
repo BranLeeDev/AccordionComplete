@@ -8,9 +8,8 @@ interface Props {
 const Answer: React.FC<Props> = ({ isOpenAnswer, answer }) => {
   return (
     <p
-      className={`text-base text-gray-600 transition-all duration-300 ease-in-out ${
-        isOpenAnswer ? "h-full overflow-auto" : "invisible h-0 overflow-hidden"
-      }`}
+      className="overflow-hidden text-base text-gray-600 transition-all duration-300 ease-in-out"
+      style={{ height: isOpenAnswer ? "100%" : "0" }}
     >
       {answer}
     </p>
